@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if echo "hello" ; then
+	echo "Command succeeded"
+else
+	echo "Commanf falied"
+fi
