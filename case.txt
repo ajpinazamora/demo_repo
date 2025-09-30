@@ -1,0 +1,20 @@
+#!/bin/bas
+echo -e "Would you like to see?
+Today's date (d)
+Currently logged in users (u)
+The content of the / directory (r)
+Enter your choice (d/u/r)-->\c"
+read ANSWER
+case $ANSWER in
+d | D ) echo -e "\nToday's date is:\c"
+date
+;;
+u | U ) echo -e "\nThe people logged into the system includes:"
+who
+;;
+r | R ) echo -e "The contents of the / directory are:"
+ls -F /
+;;
+*) echo - e "Invalid choise! \a"
+;;
+esac
