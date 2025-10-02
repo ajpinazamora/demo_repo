@@ -14,3 +14,19 @@ do
 	echo "Found script: $FILE"
 done
 
+for NUM in {0..20..5}
+do 
+	echo "Step: $NUM"
+done
+
+for FILE in /home/ajpinazamora/*.txt
+do 
+	echo "File found: $FILE"
+done
+
+for DIR in /etc/*
+do 
+	if [ -d "$DIR" ]; then
+		echo "Directory: $DIR"
+	fi
+done
