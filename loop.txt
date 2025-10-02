@@ -1,0 +1,16 @@
+#!/bin/bash
+for ANIMAL in cat dog bird fish
+do
+	echo "I like $ANIMAL"
+done
+
+for NUM in {1..5}
+do
+	echo "Number: $NUM"
+done
+
+for FILE in *.sh
+do
+	echo "Found script: $FILE"
+done
+
